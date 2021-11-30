@@ -1,0 +1,75 @@
+.diaryList{
+    margin: 40px auto;
+    width:50%;
+    padding: 0;
+}
+
+.diaryList li{
+    list-style: none;
+    padding:20px 15px;
+    background-color: #FBD3D1;
+    margin:10px 0;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 10px 15px -3px rgba(78, 78, 78, 0.1);
+}
+
+.diaryList div:first-child{
+    flex:3;
+}
+
+.diaryList div:nth-child(2){
+    flex:1;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.diaryList h3{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.diaryList li div p{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.diaryList div:nth-child(2) a{
+    text-decoration: none;
+}
+
+.diaryList div:nth-child(2) button{
+    display: block;
+    width:120px;
+    height:40px;
+    margin: 5px auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+
+.diaryList div:nth-child(2) button:hover{
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+.diaryList div:nth-child(2) a:first-child button{
+    background-color: #4AA96C;
+}
+
+.diaryList div:nth-child(2) a:nth-child(2) button{
+    background-color: #FFAB4C;
+}
+
+.diaryList div:nth-child(2) button:nth-child(3){
+    background-color: #FF5C58;
+}
+

@@ -1,0 +1,25 @@
+.diaryDetail{
+    width:50%;
+    margin: 40px auto;
+    background-color: #FBD3D1;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(78, 78, 78, 0.1);
+}
+
+.diaryDetail div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.diaryDetail h2{
+    margin:30px 0 10px 0;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.diaryDetail p{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 30px;
+}

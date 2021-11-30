@@ -1,0 +1,47 @@
+.header{
+    width: 100%;
+    background-color: #FF5C58;
+    display: flex;
+    padding: 1rem 0;
+    color: white;
+}
+
+.header h1{
+    flex:1;
+    margin-left: 50px;
+}
+
+.header h1 span{
+    font-size: 13px;
+    font-weight: 500;
+    margin-left:10px;
+}
+
+.header nav{
+    flex:1;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.header ul li{
+    margin:0 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: #012443;
+}

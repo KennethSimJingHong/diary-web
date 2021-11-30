@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes, Navigate} from 'react-router-dom';
+import { Fragment } from "react";
+
+import Layout from "./components/Layout/Layout";
+import Home from './components/Page/Home';
+import Save from './components/Page/Save';
+import DiaryDetail from './components/Page/DiaryDetail';
+import PageNotFound from './components/Page/PageNotFound';
+import OperationMessage from './components/UI/OperationMessage';
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <OperationMessage/>
+      <Layout>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home"/>}></Route>
+            <Route path="/home" element={<Home/>}></Route>
+            <Route path="/create" element={<Save/>}></Route>
+            <Route path="/diary-detail/:diaryId" element={<DiaryDetail/>}></Route>
+            <Route path="/update-diary-detail/:diaryId" element={<Save/>}></Route>
+            <Route path="*" element={<PageNotFound />}></Route>
+          </Routes>
+      </Layout>
+    </Fragment>
   );
 }
 
